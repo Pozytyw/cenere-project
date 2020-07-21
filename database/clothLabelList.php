@@ -11,7 +11,7 @@
 			$connectorDB = new ConnectorDB();
 			
 			//mysql injection test
-			$id = mysqli_real_escape_string($connectorDB, $id);
+			//$id = mysqli_real_escape_string($connectorDB, $id);
 			
 			//call to db, and get mainCloth
 			$result = $connectorDB -> query($this->getMainQery($id));
