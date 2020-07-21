@@ -1,0 +1,291 @@
+body {
+    color: #0d0d0d;
+}
+header {
+    background-color: rgb(255, 255, 255);
+}
+.header-link a{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.fa-shopping-basket{
+    font-size:30px;
+}
+
+
+.position {
+    position: absolute;
+    top: 50%;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none !important;
+}
+
+.arrow {
+    padding: 1rem 1.5rem;
+    background-color: rgb(167, 165, 165) !important;
+    color: rgb(0, 0, 0);
+    margin: 0 1rem;
+    border-radius: 15rem;
+    opacity: 0;
+    transition: 0.6s ease ;
+}
+
+.arrow1 {
+    padding: 1rem 1.5rem;
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(0, 0, 0);
+    margin: 0 1rem;
+    border-radius: 15rem;
+    opacity: 0;
+    transition: 0.6s ease ;
+}
+
+.site-slider:hover .arrow{
+    opacity: 0.4;
+}
+
+.site-slider:hover .arrow1{
+    opacity: 0.4;
+}
+
+.site-slider {
+    position: relative;
+}
+
+.right, .right1 {
+    right: 0;
+  
+}
+
+
+.item {
+    margin: 0 1rem;
+    transform: scale(0.8);
+}
+.slider-items .item img {
+    transition: all linear 0.2s
+}
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+    position: absolute;
+    bottom: -3%;
+    right: 50%;
+    transform: translateX(50%);
+    width: 80%
+}
+
+.slick-dots li {
+    margin: 0 2rem 0 2rem;
+}
+
+.slick-dots button {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 15rem;
+    padding: 0;
+    border: none;
+    background-color: rgb(105, 102, 102);
+    text-indent: -99999px;
+    opacity: 30%;
+}
+
+.slick-dots li.slick-active button {
+    transition: scale 0.5s ease;
+    transform: scale(1.1);
+    background-color: rgb(39, 37, 37);
+    opacity: 90%;
+}
+
+.site-slider .slick-center img {
+    transform: scale(1.1);
+}
+
+.site-title {
+    font-family: 'Bowlby One SC', cursive;
+}
+ 
+.site-title a {
+    text-decoration: none;
+    color: black !important;
+}
+
+.site-slider1 {
+    height: 70%;
+}
+
+.tekst {
+    color:rgb(0, 0, 0);
+    background-color: rgb(207, 207, 207);
+    padding: 0.2rem;
+}
+.divek {
+    position: relative;
+}
+.span-ustawienie {
+    position: absolute;
+    left: 50%;
+}
+
+.doprawa {
+    float: right;
+}
+
+.dolewa {
+    float: left;
+}
+
+.form-width{
+    width: 75% !important;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(44, 44, 44, 0.6);
+  outline: 0 none;
+}
+
+
+
+.form-rounded {
+    border-radius: 1rem;
+}
+
+
+
+
+    .fadeInDown {
+        -webkit-animation-name: fadeInDown;
+        animation-name: fadeInDown;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+      }
+      
+      @-webkit-keyframes fadeInDown {
+        0% {
+          opacity: 0;
+          -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+        }
+        100% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      
+      @keyframes fadeInDown {
+        0% {
+          opacity: 0;
+          -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+        }
+        100% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      
+      @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+      @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+      @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+      
+      .fadeIn {
+        opacity:0;
+        -webkit-animation:fadeIn ease-in 1;
+        -moz-animation:fadeIn ease-in 1;
+        animation:fadeIn ease-in 1;
+      
+        -webkit-animation-fill-mode:forwards;
+        -moz-animation-fill-mode:forwards;
+        animation-fill-mode:forwards;
+      
+        -webkit-animation-duration:1s;
+        -moz-animation-duration:1s;
+        animation-duration:1s;
+      }
+      
+      .fadeIn.first {
+        -webkit-animation-delay: 0.4s;
+        -moz-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+      }
+      
+      .fadeIn.second {
+        -webkit-animation-delay: 0.5s;
+        -moz-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+      }
+      
+      .fadeIn.third {
+        -webkit-animation-delay: 0.6s;
+        -moz-animation-delay: 0.6s;
+        animation-delay: 0.6s;
+      }
+      
+      .fadeIn.fourth {
+        -webkit-animation-delay: 0.7s;
+        -moz-animation-delay: 0.7s;
+        animation-delay: 0.7s;
+      }
+
+      .fadeIn.fifth {
+        -webkit-animation-delay: 0.8s;
+        -moz-animation-delay: 0.8s;
+        animation-delay: 0.8s;
+      }
+
+      .fadeIn.sixth {
+        -webkit-animation-delay: 0.9s;
+        -moz-animation-delay: 0.9s;
+        animation-delay: 0.9s;
+      }
+
+      .underlineHover:after {
+        display: block;
+        left: 0;
+        bottom: -10px;
+        width: 0;
+        height: 2px;
+        background-color: rgb(41, 43, 44);
+        content: "";
+        transition: width 0.2s;
+      }
+      
+      .underlineHover:hover {
+        color: #0d0d0d;
+      }
+      
+      .underlineHover:hover:after{
+        width: 100%;
+      }
+      
+      
