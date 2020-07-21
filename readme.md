@@ -12,7 +12,7 @@ Do poprawnego uruchomienia aplikacji jest potrzebny dostęp do bazy danych. Aby 
 Odwarzanie podatności: <br />
 Commit: "mysql injection in url /clothes" <br />
 <br />
-http://localhost/clothes/?id=MTE3OQ==__ <br />
+http://localhost/clothes/?id=MTE3OQ== <br />
 W linku powyżej znajduję się url parametr id jego wartość jest enkodowana za pomocą base64 <br />
 Dekodując wartość MTE3OQ== otrzymamy 1179. Dopisując do 1179 /* */ możemy sprawdzić czy podatność występuje, jeżeli strona wyświetli się bezbłednie oznacza to, że możememy kontynuować exploitację.
 Za pomocą union select null,...,null -- możemy określić liczbę kolumn jaką otrzymujemy. Następnie zamieniamy pojedyncze nulle na jakiś ciąg znaków np 'xx' aby odnaleźć kolumnę widoczny na stronie. Finalny ciąg do encodowania i podstawienia do id "1 union select  null, "xx", "xx", null, null, null, null --".
