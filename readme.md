@@ -8,6 +8,7 @@ Do poprawnego uruchomienia aplikacji jest potrzebny dostęp do bazy danych. Aby 
 
 ## Testy penetracyjne na stronie - błedy w trakcie tworzenie aplikacji
 ### Wykryte podatnosci:
-- mysql injection, możliwość wstrzyknięcia mysql w url parametr - załatana i przetestowana
-- zapisywanie w cookie wrażliwych danych takich jak email i hasło, używanych do działania "zapamiętaj" - zmiana na remeber_token
-- nie autoryzowany dosęp do zamówień poprzez enumerację id zamówienia. Jednak brak możliwości przypisania zamówień do użytkownika - załatana i przetestowana
+#### mysql injection, możliwość wstrzyknięcia mysql w url parametr - załatana i przetestowana
+
+#### zapisywanie w cookie wrażliwych danych takich jak email i hasło, używanych do działania "zapamiętaj" - zmiana na remeber_token
+#### nie autoryzowany dosęp do zamówień poprzez enumerację id zamówienia. Jednak brak możliwości przypisania zamówień do użytkownika - załatana i przetestowana
